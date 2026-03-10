@@ -7,7 +7,7 @@
   --dark-color: #0957c3;
   --avatar-color: rgba(16, 57, 49, 0.2);
   --light-color: rgba(9, 87, 195, 0.2);
-  --font-family: 'Helvetica Neue', sans-serif;
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   --error-color: #c92323;
   --rating: #ffc531;
