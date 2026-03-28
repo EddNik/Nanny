@@ -3,7 +3,7 @@ import { User } from 'firebase/auth';
 import { persist } from 'zustand/middleware';
 
 export interface AuthState {
-  user: User | null; // The state itself still needs to start as null
+  user: User | null;
   isAuthenticated: boolean;
   isLoading: boolean;
   setUser: (user: User) => void;

@@ -8,7 +8,6 @@ export const handleApiError = (
   let message = fallbackMessage;
 
   if (error instanceof Error) {
-    // If it's a standard JS error
     message = error.message;
   }
 

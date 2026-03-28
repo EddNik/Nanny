@@ -26,7 +26,6 @@ export default function Header() {
 
       toast.success('Logged out successfully');
     } catch (error) {
-      //   toast.error('Failed to log out');
       handleApiError(error, 'Failed to log out');
     }
   };

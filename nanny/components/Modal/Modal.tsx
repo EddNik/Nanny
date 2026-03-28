@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactNode, useEffect, useState } from 'react';
+import { ReactNode, useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import css from './Modal.module.css';
 import { X } from 'lucide-react';
@@ -23,12 +23,8 @@ function Modal({ children, onClose, isOpen }: ModalProps) {
 
     const originalOverflow = document.body.style.overflow;
 
-    // if (isOpen) {
     document.addEventListener('keydown', handleKeyDown);
     document.body.style.overflow = 'hidden';
-    // } else {
-    // document.body.style.overflow = 'auto';
-    // }
 
     return () => {
       document.removeEventListener('keydown', handleKeyDown);
@@ -41,7 +37,7 @@ function Modal({ children, onClose, isOpen }: ModalProps) {
       onClose();
     }
   }
-  if (!isOpen) return null;
+  if (!isOpen || typeof document === 'undefined') return null;
 
   return createPortal(
     <div

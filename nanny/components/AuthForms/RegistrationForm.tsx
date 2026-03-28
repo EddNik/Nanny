@@ -21,7 +21,7 @@ export default function RegistrationForm({ onSuccess }: RegistrationProps) {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isLoading },
+    formState: { errors, isSubmitting },
   } = useForm({
     resolver: yupResolver(registrationSchema),
   });
@@ -37,16 +37,12 @@ export default function RegistrationForm({ onSuccess }: RegistrationProps) {
       const user = userCredential.user;
 
       await updateProfile(user, {
-        displayName: data.name, // Set display name from the form input
-        //   photoURL: 'https://example.com/default-avatar.png', // Optional: Set a default avatar URL
-        // displayName: data.email.split('@')[0], // Set display name as the part before '@'
+        displayName: data.name,
       });
 
       toast.success('Registration successful!');
       onSuccess();
     } catch (error) {
-      // toast.error((error as Error).message || 'Registration failed');
-      // One clean line handles everything
       handleApiError(error, 'Registration failed');
     }
   };
