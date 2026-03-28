@@ -20,5 +20,5 @@ export const app = !getApps().length
 export const auth = getAuth(app);
 export const db = getDatabase(app);
 
-console.log('Auth:', auth);
-console.log('Database:', db);
+// console.log('Auth:', auth);
+// console.log('Database:', db);

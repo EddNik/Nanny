@@ -1,0 +1,88 @@
+.modal {
+  background-color: var(--background);
+  border-radius: 30px;
+  width: 100%;
+  max-width: 565px;
+  padding: 64px 40px;
+  position: relative;
+  box-shadow:
+    0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  font-family: var(--font-family);
+}
+
+.headerBlock {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.authButton {
+  width: 100%;
+  cursor: pointer;
+  border-radius: 30px;
+  margin-bottom: 8px;
+  padding: 16px 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.25;
+  margin-top: 22px;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #11101c;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(17, 16, 28, 0.5);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.inputWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.inputField {
+  border: 1px solid var(--border-color);
+  background-color: rgba(9, 87, 195, 0.2);
+
+  border-radius: 12px;
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  transition: border-color 0.2s;
+  font-family: inherit;
+}
+
+.inputField:focus {
+  border-color: var(--light-color);
+}
+
+.inputField::placeholder {
+  color: var(--grey-text);
+}
+
+.error {
+  color: #dc3545;
+  font-size: 12px;
+  text-align: left;
+  padding-left: 4px;
+}

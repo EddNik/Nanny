@@ -1,0 +1,118 @@
+.header {
+  position: absolute;
+  z-index: 100;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 96px;
+  width: 100%;
+  max-width: 1376px;
+
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: transparent;
+  color: var(--background-color);
+
+  border-bottom: 1px solid #fbfbfb66;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navigationLink {
+  text-decoration: none;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: -0.01em;
+  color: var(--background-color);
+  transition:
+    color 0.2s,
+    text-shadow 0.2s ease;
+}
+
+.navigationLink:hover {
+  color: #ffffffb3;
+  text-shadow: 0 0 10px #ffffffb3;
+}
+
+.logo {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.02em;
+  color: var(--background-color);
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 92px;
+}
+
+.logoutButton {
+  background: transparent;
+  border: 1px solid var(--button-secondary-border);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 128px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+}
+
+.authContainer {
+  display: flex;
+  align-items: center;
+}
+
+.authButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.loginButton {
+  background: transparent;
+  color: var(--background-color);
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+
+  border: 1px solid rgba(251, 251, 251, 0.4);
+  border-radius: 30px;
+  padding: 14px 39px;
+  width: 124px;
+  height: 48px;
+}
+
+.registrationButton {
+  background: var(--dark-color);
+
+  color: var(--background-color);
+  cursor: pointer;
+  transition:
+    background-color 0.2s,
+    border-color 0.2s;
+
+  border-radius: 30px;
+  padding: 14px 40px;
+  width: 168px;
+  height: 48px;
+}
+
+.loginButton:hover,
+.registrationButton:hover {
+  background: var(--background-color);
+  color: var(--dark-color);
+}
