@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--background);
+  background-color: var(--background-color);
   padding: 32px;
 }
 
@@ -139,4 +139,17 @@
   font-weight: 700;
   font-size: 24px;
   color: var(--foreground-color);
+}
+
+.pageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 100px 20px;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 565px;
 }

@@ -1,0 +1,12 @@
+.loginPageContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+  padding: 100px 20px;
+}
+
+.formWrapper {
+  width: 100%;
+  max-width: 565px;
+}

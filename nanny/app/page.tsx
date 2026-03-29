@@ -22,7 +22,7 @@ export default function Home() {
               Find Babysitters Online for All Occasions
             </p>
             <Link
-              href={isAuthenticated ? '/nannies' : '/sign-in'}
+              href={isAuthenticated ? '/nannies' : '/login'}
               className={css.getStarted}
             >
               Get started

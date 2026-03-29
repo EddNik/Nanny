@@ -4,7 +4,6 @@ import { Toaster } from 'react-hot-toast';
 import TanStackProvider from '../components/TanStackProvider/TanStackProvider';
 import AuthProvider from '@/components/AuthProvider/AuthProvider';
 import Header from '@/components/Header/Header';
-import ModalProvider from '@/components/ModalProvider/ModalProvider';
 
 export const metadata: Metadata = {
   title: 'NannyServices',
@@ -62,10 +61,8 @@ export default function RootLayout({
         <TanStackProvider>
           <AuthProvider>
             <Header />
-            <main>
-              {children}
-              <ModalProvider />
-            </main>
+            <main>{children}</main>
+            {modal}
           </AuthProvider>
         </TanStackProvider>
         <Toaster
